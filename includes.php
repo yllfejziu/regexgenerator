@@ -17,6 +17,20 @@
 <script>
 		
 	$(document).ready(function() {
+		$('#email').on("keyup", function(event){
+			event.preventDefault();
+			if(event.keyCode === 13){
+				$('#button').click();
+			}
+		})
+
+		$('#testEmail').on("keyup", function(event){
+			event.preventDefault();
+			if(event.keyCode === 13){
+				$('#btnTestEmail').click();
+			}
+		})
+
 		$('#button').on('click', function(){
 			let email = $('#email').val();
 
