@@ -55,6 +55,8 @@
 
 				$('#btnTestEmails').on('click', function(){
 					$('.regex').text(generatedRegex);
+					$('#testEmail').val('');
+					$('.validation').removeClass('glyphicon-ok green glyphicon-remove red');
 				});
 
 				$('#btnTestEmail').on('click', function(){
